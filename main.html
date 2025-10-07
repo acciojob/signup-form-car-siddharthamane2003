@@ -1,16 +1,78 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./script.js"></script>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <form method="post">
+        <!-- Name -->
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Name" required>
+        </div>
 
+        <!-- Email -->
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Email" required>
+        </div>
+
+        <!-- Gender -->
+        <div>
+            <label>Gender</label>
+            <label for="gender_m">Male</label>
+            <input id="gender_m" type="radio" name="gender" required>
+            
+            <label for="gender_f">Female</label>
+            <input id="gender_f" type="radio" name="gender" required>
+        </div>
+
+        <!-- Car Brands -->
+        <div>
+            <label for="cars">Car Brands</label>
+            <select id="cars" required>
+                <option value="">--Please choose an option--</option>
+                <option>Bugati</option>
+                <option>Maruti</option>
+                <option>Rolles Royles</option>  
+            </select>
+        </div>
+
+        <!-- Age -->
+        <div>
+            <label for="age">Age</label>
+            <input id="age" type="number" placeholder="Age" required>
+        </div>
+
+        <!-- DOB -->
+        <div>
+            <label for="dob">Date</label>
+            <input id="dob" type="date" required>
+        </div>
+
+        <!-- Tel (optional) -->
+        <div>
+            <label for="tel">Tel</label>
+            <input id="tel" type="tel" placeholder="xxx-xxx-xxxx">
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Password" required>
+        </div>
+
+        <!-- TOS -->
+        <div>
+            <label for="tos">I agree to the TOS</label>
+            <input type="checkbox" id="tos" required>
+        </div>
+
+        <!-- Submit button -->
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
 </body>
-
 </html>
